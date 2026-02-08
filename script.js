@@ -1,4 +1,4 @@
-// Mobile Navigation Toggle
+
 const hamburger = document.getElementById('hamburger');
 const navMenu = document.getElementById('navMenu');
 
@@ -11,7 +11,7 @@ hamburger.addEventListener('click', () => {
     spans[2].style.transform = navMenu.classList.contains('active') ? 'rotate(-45deg) translate(7px, -6px)' : 'none';
 });
 
-// Close mobile menu when clicking on a nav link
+
 const navLinks = document.querySelectorAll('.nav-link');
 navLinks.forEach(link => {
     link.addEventListener('click', () => {
@@ -24,7 +24,7 @@ navLinks.forEach(link => {
     });
 });
 
-// Modern Projects Carousel
+
 const projectsTrack = document.getElementById('projectsTrack');
 const projectPrevBtn = document.getElementById('projectPrevBtn');
 const projectNextBtn = document.getElementById('projectNextBtn');
@@ -34,10 +34,10 @@ let currentSlide = 0;
 const totalSlides = slides.length;
 
 function updateCarousel() {
-    const slideWidth = slides[0].offsetWidth + 30; // width + gap
+    const slideWidth = slides[0].offsetWidth + 30;
     projectsTrack.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
 
-    // Update button states
+
     projectPrevBtn.disabled = currentSlide === 0;
     projectNextBtn.disabled = currentSlide === totalSlides - 1;
 }
@@ -56,7 +56,7 @@ projectPrevBtn.addEventListener('click', () => {
     }
 });
 
-// Update on window resize
+
 let resizeTimer;
 window.addEventListener('resize', () => {
     clearTimeout(resizeTimer);
@@ -65,10 +65,10 @@ window.addEventListener('resize', () => {
     }, 250);
 });
 
-// Initialize
+
 updateCarousel();
 
-// Smooth scrolling for anchor links
+
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -82,7 +82,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Active navigation highlighting on scroll
+
 const sections = document.querySelectorAll('section');
 const navItems = document.querySelectorAll('.nav-link');
 
@@ -104,7 +104,7 @@ window.addEventListener('scroll', () => {
         }
     });
 
-    // Add shadow to navbar on scroll
+
     const navbar = document.querySelector('.navbar');
     if (window.scrollY > 50) {
         navbar.style.boxShadow = '0 5px 20px rgba(0, 0, 0, 0.1)';
@@ -113,7 +113,7 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// Contact Form Handling
+
 const contactForm = document.getElementById('contactForm');
 
 contactForm.addEventListener('submit', function (e) {
@@ -135,7 +135,7 @@ contactForm.addEventListener('submit', function (e) {
     contactForm.reset();
 });
 
-// Notification function
+
 function showNotification(message, type) {
     const notification = document.createElement('div');
     notification.className = `notification ${type}`;
@@ -189,7 +189,7 @@ function showNotification(message, type) {
     }, 3000);
 }
 
-// Scroll reveal animation
+
 const observerOptions = {
     threshold: 0.1,
     rootMargin: '0px 0px -100px 0px'
@@ -211,7 +211,7 @@ document.querySelectorAll('.about-card, .skill-category').forEach(el => {
     observer.observe(el);
 });
 
-// Keyboard navigation for projects
+
 document.addEventListener('keydown', (e) => {
     if (e.key === 'ArrowLeft') {
         projectPrevBtn.click();
@@ -220,7 +220,7 @@ document.addEventListener('keydown', (e) => {
     }
 });
 
-// Touch/Swipe support for mobile projects
+
 let touchStartX = 0;
 let touchEndX = 0;
 
@@ -246,5 +246,3 @@ function handleProjectSwipe() {
     }
 }
 
-console.log('Portfolio initialized successfully! 🚀');
-console.log('Made with ❤️ by Asif Ansari');
