@@ -4,390 +4,389 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Asif - Portfolio</title>
+  <title>Asif Ansari - Software Developer</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Syne:wght@400;600;700;800&display=swap"
-    rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
-
-  <nav class="navbar" id="navbar">
+  <!-- Navigation -->
+  <nav class="navbar">
     <div class="nav-container">
       <div class="logo">
-        <span class="logo-icon">A</span>
-        <span class="logo-text">ASIF</span>
+        <i class="fas fa-code"></i>
+        <span>Asif Ansari</span>
       </div>
-      <ul class="nav-links">
+      <ul class="nav-menu" id="navMenu">
         <li><a href="#home" class="nav-link">Home</a></li>
         <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#skills" class="nav-link">Skills</a></li>
         <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
         <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
-      <button class="cta-btn">Book a Call</button>
+      <a href="#contact" class="cta-btn">Get in Touch</a>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </div>
   </nav>
 
-
+  <!-- Hero Section -->
   <section id="home" class="hero">
     <div class="hero-container">
       <div class="hero-content">
-        <div class="availability-badge fade-in">
-          <span class="status-dot"></span>
-          AVAILABLE FOR WORK
-        </div>
-        <h1 class="hero-title fade-in-up">
-          Hi, I'm a<br>
-          <span class="gradient-text">Software Developer</span>
-        </h1>
-        <p class="hero-subtitle fade-in-up delay-1">
-          I am a student at <strong>Trident Academy of Technology</strong>.
-          I have a keen interest in technology and development, passionate about
-          exploring innovative solutions to real-world problems.
-        </p>
-        <div class="hero-actions fade-in-up delay-2">
-          <button class="btn-primary">Contact Me</button>
-          <button class="btn-secondary">View Work</button>
-        </div>
-        <div class="social-links fade-in-up delay-3">
-          <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
-          <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-          <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-          <a href="#" class="social-link"><i class="fab fa-github"></i></a>
-          <a href="#" class="social-link"><i class="fab fa-dribbble"></i></a>
-          <a href="#" class="social-link"><i class="fab fa-behance"></i></a>
+        <h1>Build Your Digital Future with the <span class="highlight">Right Developer</span></h1>
+        <p>Full-stack software developer passionate about creating scalable web applications and AI-powered solutions.
+          Currently pursuing B.Tech in Computer Science with hands-on experience in modern web technologies.</p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn-primary">View Projects</a>
+          <a href="Asif_Ansari_Resumee.pdf" class="btn-secondary" target="_blank">
+            <i class="fas fa-play-circle"></i> Download Resume
+          </a>
         </div>
       </div>
-      <div class="hero-image fade-in-up delay-1">
-        <div class="image-wrapper">
-          <div class="image-bg"></div>
-          <img src="profpic.jpeg" alt="Asif Profile" class="profile-img">
-          <div class="image-decoration"></div>
-        </div>
-        <div class="floating-card card-1">
-          <span class="card-icon">💻</span>
-          <div>
-            <p class="card-title">SOFTWARE DEVELOPER</p>
-            <p class="card-price">$150 - $300/HR</p>
+      <div class="hero-cards">
+        <div class="profile-card card-yellow">
+          <div class="card-content">
+            <h3>Full-Stack Developer</h3>
+            <p>2+ Years Learning Experience</p>
+            <div class="avatar">
+              <i class="fas fa-user-circle"></i>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-    <div class="scroll-indicator">
-      <span>Scroll to explore</span>
-      <div class="scroll-line"></div>
-    </div>
-  </section>
-
-
-  <section id="about" class="about-section">
-    <div class="container">
-      <div class="section-header fade-in-scroll">
-        <h2 class="section-title">My Mission</h2>
-      </div>
-      <div class="mission-card fade-in-scroll">
-        <p class="mission-text">
-          My mission is to assist startups and enterprises in creating an
-          <span class="highlight">emotional bond</span> between their products and
-          satisfied, engaged customers.
-        </p>
-        <div class="company-logos">
-          <span class="company-logo">Google</span>
-          <span class="company-logo">Amazon</span>
-          <span class="company-logo">Stripe</span>
-          <span class="company-logo">HubSpot</span>
+        <div class="profile-card card-blue">
+          <div class="card-content">
+            <h3>Tech Stack Focus</h3>
+            <p>MERN • Next.js • Node.js
+              React • Express • MongoDB
+              REST APIs • Git • Docker</p>
+            <div class="avatar">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-
-  <section id="skills" class="services-section">
+  <!-- About Section -->
+  <section id="about" class="about">
     <div class="container">
-      <div class="section-header fade-in-scroll">
-        <h2 class="section-title">How Can I Assist You?</h2>
+      <h2 class="section-title">About <span class="highlight">Me</span></h2>
+      <p class="section-subtitle">I am an engineering student and aspiring full-stack software developer dedicated to
+        building innovative solutions.</p>
+
+      <div class="about-grid">
+        <div class="about-card card-pink">
+          <div class="card-icon">
+            <i class="fas fa-laptop-code"></i>
+          </div>
+          <h3>2+ years of learning</h3>
+          <p>With continuous learning and hands-on experience, I bring expertise in modern web development technologies
+            and best practices to create robust applications.</p>
+        </div>
+
+        <div class="about-card card-blue">
+          <div class="card-icon">
+            <i class="fas fa-users"></i>
+          </div>
+          <h3>Team Collaboration</h3>
+          <p>Experienced in working with cross-functional teams, utilizing version control systems like GitHub, and
+            following agile development methodologies.</p>
+        </div>
+
+        <div class="about-card card-orange">
+          <div class="card-icon">
+            <i class="fas fa-briefcase"></i>
+          </div>
+          <h3>Dedicated Work</h3>
+          <p>Committed to writing clean, maintainable code and building scalable solutions. Passionate about continuous
+            learning and staying updated with industry trends.</p>
+        </div>
       </div>
-      <div class="services-grid">
-        <div class="service-card fade-in-scroll">
-          <div class="service-number">01</div>
-          <div class="service-icon">
-            <i class="fas fa-palette"></i>
-          </div>
-          <h3 class="service-title">UI Design</h3>
-          <p class="service-description">
-            We create intuitive, visually appealing interfaces that enhance user
-            experience and navigation, ensuring your app is both beautiful and
-            functional across all devices.
-          </p>
-        </div>
 
-        <div class="service-card fade-in-scroll delay-1">
-          <div class="service-number">02</div>
-          <div class="service-icon">
-            <i class="fas fa-code"></i>
-          </div>
-          <h3 class="service-title">Development</h3>
-          <p class="service-description">
-            Our team builds reliable, scalable solutions, delivering clean code
-            that powers websites and mobile apps with top-notch performance and security.
-          </p>
-        </div>
-
-        <div class="service-card fade-in-scroll">
-          <div class="service-number">03</div>
-          <div class="service-icon">
-            <i class="fas fa-pen-nib"></i>
-          </div>
-          <h3 class="service-title">Graphic Design</h3>
-          <p class="service-description">
-            We design responsive, user-friendly websites that blend aesthetics with
-            functionality, providing a seamless experience across devices and
-            reflecting your brand's identity.
-          </p>
-        </div>
-
-        <div class="service-card fade-in-scroll delay-1">
-          <div class="service-number">04</div>
-          <div class="service-icon">
-            <i class="fas fa-star"></i>
-          </div>
-          <h3 class="service-title">Branding</h3>
-          <p class="service-description">
-            We craft memorable brand identities, from logos to complete strategies,
-            ensuring consistency and a strong connection with your audience across
-            all platforms.
-          </p>
+      <div class="education">
+        <h3><i class="fas fa-university"></i> Education</h3>
+        <div class="education-item">
+          <h4>Bachelor of Technology (B.Tech) in Computer Science & Technology</h4>
+          <p class="education-duration">2023 - 2027 | CGPA: 8.04</p>
+          <p class="education-location">Chandrasekharpur, Bhubaneswar, Odisha</p>
+          <p class="coursework"><strong>Relevant Coursework:</strong> Data Structures & Algorithms, Object-Oriented
+            Programming, Database Management Systems, Operating Systems, Computer Networks, Web Development</p>
         </div>
       </div>
     </div>
   </section>
 
-
-  <section class="skills-detail-section">
-    <div class="container">
-      <div class="section-header fade-in-scroll">
-        <h2 class="section-title">Technical Skills</h2>
-        <p class="section-subtitle">
-          I have strong web development skills, specializing in front-end technologies
-          and frameworks to create responsive, user-friendly interfaces.
-        </p>
+  <!-- Projects Section - New Modern Design -->
+  <section id="projects" class="projects">
+    <div class="projects-wrapper">
+      <div class="projects-header">
+        <h2 class="projects-main-title">Featured Projects,<br><span>Innovative Solutions</span></h2>
+        <div class="projects-nav-buttons">
+          <button class="nav-circle-btn" id="projectPrevBtn">
+            <i class="fas fa-arrow-left"></i>
+          </button>
+          <button class="nav-circle-btn" id="projectNextBtn">
+            <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
       </div>
+
+      <div class="projects-container">
+        <div class="projects-track" id="projectsTrack">
+          <!-- Project 1 -->
+          <div class="project-slide">
+            <div class="project-info-card">
+              <h3>Study-Hour</h3>
+              <p>Developed an AI-powered web application that generates personalized 30-day study plans based on
+                user-selected topics. Integrated AI and YouTube content selection to recommend relevant learning
+                resources efficiently.</p>
+              <div class="project-tags">
+                <span class="tag">React</span>
+                <span class="tag">Next.js</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">PostgreSQL</span>
+                <span class="tag">AI</span>
+              </div>
+              <a href="https://github.com/Asifdev01" class="project-link" target="_blank">
+                <i class="fab fa-github"></i> View on GitHub
+              </a>
+            </div>
+            <div class="project-image-card">
+              <div class="project-visual">
+                <img src="p1.png" alt="AI Learning Platform" class="project-img">
+
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-slide">
+            <div class="project-info-card">
+              <h3>Smart Health App</h3>
+              <p>Designed a health monitoring application to assist healthcare workers in reporting symptoms of
+                water-borne diseases. Built a data-driven system for early detection and area-based alerts using AI and
+                machine learning.</p>
+              <div class="project-tags">
+                <span class="tag">React Native</span>
+                <span class="tag">AI/ML</span>
+                <span class="tag">Healthcare</span>
+                <span class="tag">Mobile</span>
+              </div>
+              <a href="https://github.com/Asifdev01" class="project-link" target="_blank">
+                <i class="fab fa-github"></i> View on GitHub
+              </a>
+            </div>
+            <div class="project-image-card">
+              <div class="project-visual">
+                <img src="p2.jpg" alt="Healthcare Solution" class="project-img">
+              </div>
+            </div>
+          </div>
+
+          <!-- Dummy Project 1 -->
+          <div class="project-slide">
+            <div class="project-info-card">
+              <h3>Corporate IT Website</h3>
+              <p>Delivering scalable, secure, and innovative IT services that empower organizations to adapt, grow, and
+                lead in a digital-first world.</p>
+              <div class="project-tags">
+                <span class="tag">Javascript</span>
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+              </div>
+              <a href="https://github.com/Asifdev01/corporate-it-website" class="project-link">
+                <i class="fab fa-github"></i> View on GitHub
+              </a>
+            </div>
+            <div class="project-image-card">
+              <div class="project-visual">
+                <img src="p3.png" alt="Corporate IT Website" class="project-img">
+              </div>
+            </div>
+          </div>
+
+          <!-- Dummy Project 2 -->
+          <div class="project-slide">
+            <div class="project-info-card">
+              <h3>Share2Serve</h3>
+              <p>Share2Serve is a technology-driven food donation platform that connects individuals, restaurants, and
+                event organizers with trusted NGOs to ensure surplus food reaches the needy efficiently, safely, and on
+                time.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Javascript</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">React</span>
+                <span class="tag">PostgreSQL</span>
+              </div>
+              <a href="https://github.com/Asifdev01/share2serve" class="project-link">
+                <i class="fab fa-github"></i> View on GitHub
+              </a>
+            </div>
+            <div class="project-image-card">
+              <div class="project-visual">
+                <img src="p4.png" alt="Share2Serve" class="project-img">
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <h2 class="section-title">Technical <span class="highlight">Skills</span></h2>
+      <p class="section-subtitle">Technologies and tools I work with</p>
+
       <div class="skills-grid">
-        <div class="skill-card fade-in-scroll">
-          <div class="skill-icon">
-            <i class="fab fa-html5"></i>
+        <div class="skill-category">
+          <h3><i class="fas fa-palette"></i> Frontend Development</h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <i class="fab fa-html5"></i>
+              <span>HTML5</span>
+            </div>
+            <div class="skill-item">
+              <i class="fab fa-css3-alt"></i>
+              <span>CSS3</span>
+            </div>
+            <div class="skill-item">
+              <i class="fab fa-js"></i>
+              <span>JavaScript</span>
+            </div>
+            <div class="skill-item">
+              <i class="fab fa-react"></i>
+              <span>React</span>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-wind"></i>
+              <span>Next.js</span>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-paint-brush"></i>
+              <span>Tailwind CSS</span>
+            </div>
           </div>
-          <h3>HTML/CSS</h3>
-          <p>
-            I have a solid command of HTML and CSS, allowing me to design and build
-            well-structured, visually appealing, and responsive web pages with
-            professional results.
-          </p>
         </div>
 
-        <div class="skill-card fade-in-scroll delay-1">
-          <div class="skill-icon">
-            <i class="fab fa-react"></i>
+        <div class="skill-category">
+          <h3><i class="fas fa-server"></i> Backend Development</h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <i class="fab fa-node-js"></i>
+              <span>Node.js</span>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-code"></i>
+              <span>Express.js</span>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-network-wired"></i>
+              <span>REST APIs</span>
+            </div>
           </div>
-          <h3>React JS</h3>
-          <p>
-            I have a good understanding of ReactJS, including components, state,
-            props, and hooks. I can build responsive user interfaces and work
-            with tools like React Router.
-          </p>
         </div>
 
-        <div class="skill-card fade-in-scroll">
-          <div class="skill-icon">
-            <i class="fab fa-react"></i>
+        <div class="skill-category">
+          <h3><i class="fas fa-tools"></i> Tools & Platforms</h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <i class="fab fa-github"></i>
+              <span>GitHub</span>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-paper-plane"></i>
+              <span>Postman</span>
+            </div>
+            <div class="skill-item">
+              <i class="fab fa-docker"></i>
+              <span>Docker</span>
+            </div>
           </div>
-          <h3>React Native</h3>
-          <p>
-            I have experience building cross-platform mobile applications using
-            React Native, managing state, integrating APIs, and optimizing
-            performance for smooth experiences.
-          </p>
-        </div>
-
-        <div class="skill-card fade-in-scroll delay-1">
-          <div class="skill-icon">
-            <i class="fas fa-pen-ruler"></i>
-          </div>
-          <h3>UI/UX Design</h3>
-          <p>
-            I have a good understanding of UI/UX design principles, creating
-            intuitive interfaces with tools like Figma and Adobe XD to deliver
-            responsive, appealing designs.
-          </p>
-        </div>
-
-        <div class="skill-card fade-in-scroll delay-1">
-          <div class="skill-icon">
-            <i class="fab fa-nextjs"></i>
-          </div>
-          <h3>Next JS</h3>
-          <p>
-            I have a good understanding of Next JS, including components, state,
-            props, and hooks. I can build responsive user interfaces and work
-            with tools like Next Router.
-          </p>
-        </div>
-
-
-        <div class="skill-card fade-in-scroll delay-1">
-          <div class="skill-icon">
-            <i class="fab fa-rest"></i>
-          </div>
-          <h3>Rest API</h3>
-          <p>
-            I have a good understanding of Rest API, including components, state,
-            props, and hooks. I can build responsive user interfaces and work
-            with tools like Next Router.
-          </p>
         </div>
       </div>
     </div>
   </section>
 
-
-  <section id="projects" class="projects-section">
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
     <div class="container">
-      <div class="section-header fade-in-scroll">
-        <h2 class="section-title">Selected Work</h2>
-        <button class="btn-text">See All <i class="fas fa-arrow-right"></i></button>
-      </div>
+      <h2 class="section-title">Get In <span class="highlight">Touch</span></h2>
+      <p class="section-subtitle">Let's connect and build something amazing together</p>
 
-      <div class="project-showcase fade-in-scroll">
-        <div class="project-image">
-          <img src="freshplate.png" alt="Freshplate Project">
-          <div class="project-tags">
-            <span class="tag">UI DESIGN</span>
-            <span class="tag">REACT JS</span>
-          </div>
-        </div>
-        <div class="project-info">
-          <div class="project-meta">
-            <span class="project-category">DIGITAL AGENCY</span>
-            <span class="project-year">2024</span>
-          </div>
-          <h3 class="project-title">Freshplate</h3>
-          <p class="project-description">
-            I created a food ordering website using React.js, focusing on the frontend.
-            The project features an interactive and user-friendly interface for browsing
-            food items, managing a shopping cart, and placing orders.
-          </p>
-          <a href="#" class="btn-text">View Project <i class="fas fa-arrow-right"></i></a>
-        </div>
-      </div>
-
-      <div class="project-showcase reverse fade-in-scroll">
-        <div class="project-image">
-          <img src="Chatzzy.png" alt="Chatzzy Project">
-          <div class="project-tags">
-            <span class="tag">UI/UX</span>
-            <span class="tag">FIGMA</span>
-          </div>
-        </div>
-        <div class="project-info">
-          <div class="project-meta">
-            <span class="project-category">MOBILE APP</span>
-            <span class="project-year">2024</span>
-          </div>
-          <h3 class="project-title">Chatzzy - Chat App</h3>
-          <p class="project-description">
-            I designed a UI/UX model for a chatting app using Figma. The project focuses
-            on creating a visually appealing and user-friendly interface with chat screens,
-            user profiles, and notifications.
-          </p>
-          <a href="#" class="btn-text">View Project <i class="fas fa-arrow-right"></i></a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <section id="contact" class="contact-section">
-    <div class="container">
-      <div class="contact-content fade-in-scroll">
+      <div class="contact-grid">
         <div class="contact-info">
-          <h2 class="contact-title">
-            Contact with me to <span class="gradient-text">sizzle</span> your project
-          </h2>
-          <p class="contact-subtitle">
-            Feel free to contact me if having any questions. I'm available for new
-            projects or just for chatting.
-          </p>
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <h4>Email</h4>
+              <a href="mailto:asifcs.dev.work@gmail.com">asifcs.dev.work@gmail.com</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <div>
+              <h4>Phone</h4>
+              <a href="tel:7735417491">+91 773-541-7491</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <h4>Location</h4>
+              <p>Chandrasekharpur, Bhubaneswar<br>Odisha, 751021</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <i class="fab fa-github"></i>
+            <div>
+              <h4>GitHub</h4>
+              <a href="https://github.com/Asifdev01" target="_blank">github.com/Asifdev01</a>
+            </div>
+          </div>
+
+          <div class="social-links">
+            <a href="https://github.com/Asifdev01" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="mailto:asifcs.dev.work@gmail.com"><i class="fas fa-envelope"></i></a>
+          </div>
         </div>
-        <form class="contact-form fade-in-scroll delay-1">
-          <div class="form-row">
-            <div class="form-group">
-              <input type="text" placeholder="Name" class="form-input" required>
-            </div>
-            <div class="form-group">
-              <input type="email" placeholder="Email" class="form-input" required>
-            </div>
+
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <input type="text" id="name" placeholder="Your Name" required>
           </div>
           <div class="form-group">
-            <textarea placeholder="Work Description..." class="form-textarea" rows="5" required></textarea>
+            <input type="email" id="email" placeholder="Your Email" required>
           </div>
-          <button type="submit" class="btn-submit">Submit</button>
+          <div class="form-group">
+            <input type="text" id="subject" placeholder="Subject" required>
+          </div>
+          <div class="form-group">
+            <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+          </div>
+          <button type="submit" class="btn-primary">Send Message</button>
         </form>
       </div>
     </div>
   </section>
 
-
+  <!-- Footer -->
   <footer class="footer">
     <div class="container">
-      <div class="footer-content">
-        <div class="footer-brand">
-          <h3 class="footer-logo">ASIF</h3>
-          <p class="footer-tagline">Product Designer & Developer</p>
-          <div class="footer-social">
-            <a href="#" class="footer-social-link"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#" class="footer-social-link"><i class="fab fa-twitter"></i></a>
-            <a href="#" class="footer-social-link"><i class="fab fa-instagram"></i></a>
-            <a href="#" class="footer-social-link"><i class="fab fa-github"></i></a>
-            <a href="#" class="footer-social-link"><i class="fab fa-dribbble"></i></a>
-            <a href="#" class="footer-social-link"><i class="fab fa-behance"></i></a>
-          </div>
-        </div>
-        <div class="footer-links">
-          <div class="footer-column">
-            <h4>Quick Links</h4>
-            <ul>
-              <li><a href="#home">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#skills">Skills</a></li>
-              <li><a href="#projects">Projects</a></li>
-            </ul>
-          </div>
-          <div class="footer-column">
-            <h4>Services</h4>
-            <ul>
-              <li><a href="#">UI Design</a></li>
-              <li><a href="#">Development</a></li>
-              <li><a href="#">Graphic Design</a></li>
-              <li><a href="#">Branding</a></li>
-            </ul>
-          </div>
-          <div class="footer-column">
-            <h4>Contact</h4>
-            <ul>
-              <li><a href="mailto:hello@asif.com">hello@asif.com</a></li>
-              <li><a href="#">Book a Call</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; 2024 Asif. All rights reserved.</p>
-      </div>
+      <p>&copy; 2025 Asif Ansari. All rights reserved. Built with passion and code.</p>
     </div>
   </footer>
 
