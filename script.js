@@ -119,20 +119,31 @@ const contactForm = document.getElementById('contactForm');
 contactForm.addEventListener('submit', function (e) {
     e.preventDefault();
 
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const subject = document.getElementById('subject').value;
-    const message = document.getElementById('message').value;
+    const submitBtn = contactForm.querySelector('button[type="submit"]');
+    submitBtn.textContent = 'Sending...';
+    submitBtn.disabled = true;
 
-    const mailtoLink = `mailto:asifcs.dev.work@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`)}`;
+    const templateParams = {
+        from_name: document.getElementById('name').value,
+        from_email: document.getElementById('email').value,
+        subject: document.getElementById('subject').value,
+        message: document.getElementById('message').value,
+    };
 
-    showNotification('Thank you! Opening your email client...', 'success');
-
-    setTimeout(() => {
-        window.location.href = mailtoLink;
-    }, 1000);
-
-    contactForm.reset();
+    // ✅ STEP 2: Replace YOUR_SERVICE_ID and YOUR_TEMPLATE_ID with your EmailJS values
+    emailjs.send('service_x2hhpi4', 'template_0964heg', templateParams)
+        .then(() => {
+            showNotification('✅ Message sent! I\'ll get back to you soon.', 'success');
+            contactForm.reset();
+        })
+        .catch((error) => {
+            console.error('EmailJS error:', error);
+            showNotification('❌ Failed to send. Please email me directly.', 'error');
+        })
+        .finally(() => {
+            submitBtn.textContent = 'Send Message';
+            submitBtn.disabled = false;
+        });
 });
 
 
