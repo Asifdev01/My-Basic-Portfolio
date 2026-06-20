@@ -265,7 +265,7 @@ const projectImages = document.querySelectorAll('.project-img');
 
 projectImages.forEach(img => {
     img.style.cursor = 'pointer';
-    img.addEventListener('click', function() {
+    img.addEventListener('click', function () {
         modal.style.display = 'block';
         modalImg.src = this.src;
     });

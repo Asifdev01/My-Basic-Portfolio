@@ -749,8 +749,15 @@ html {
 }
 
 @keyframes zoomIn {
-  from {transform: scale(0.8); opacity: 0;}
-  to {transform: scale(1); opacity: 1;}
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 .modal-close {
