@@ -1,2 +1,3 @@
 # My-Basic-Portfolio
-this is my 1st portfolio only using HTML and CSS
+------------------------------------------------------------------------------
+A responsive personal portfolio website built using HTML, CSS, and JavaScript. Showcases my projects, technical skills, education, and achievements through a modern, user-friendly interface with smooth navigation and interactive design elements.
